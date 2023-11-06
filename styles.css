@@ -1,0 +1,146 @@
+body {
+    background: rgb(241, 241, 241);
+
+}
+
+.container {
+    display: grid;
+
+    /* grid-template-columns: 4fr 1fr; */
+    /* auto auto 
+    minmax(100px;100px  */
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3fr 2fr 4fr;
+    /* выравнивает по горизонтали */
+    /* justify-items: center; */
+    /* выравниваеи по вертикали */
+    /* align-items: center; */
+}
+
+.griditem {
+    border: 5px dotted red;
+    margin: 10px;
+    text-align: center;
+}
+
+.box1 {
+    background: rgba(180, 224, 83, 0.5);
+    /* grid-row-start: span 1;
+    grid-column: span 2; */
+    margin: auto;
+}
+
+.box4 {
+    background: rgb(189, 130, 11);
+    color: rgb(250, 19, 19);
+    font-weight: bolder;
+    /* width: 50px; */
+}
+
+hr {
+    color: rgb(240, 21, 21);
+    height: 6px;
+    background: black;
+}
+
+.gridareas {
+    display: grid;
+    /* grid-template: fitcontent / 90% 10%; */
+    grid-template-columns: 93% 7%;
+    grid-template-rows: fitcontent;
+    grid-template-areas: "header header"
+        "content sidebar"
+        "footer footer";
+    row-gap: 3%;
+    column-gap: 0%;
+    margin: 20px 30px 20px 30px;
+    /* background: rgba(180, 224, 83, 0.5); */
+
+
+}
+
+.gridborders {
+    border: 1px solid rgba(59, 122, 73, 0.5);
+    margin: 3px;
+    border-radius: 10px;
+
+    /* margin-right: 2%; */
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    font-size: larger;
+    background: rgba(32, 119, 29, 0.5);
+    color: white;
+    font-weight: bolder;
+}
+
+.content {
+    grid-area: content;
+    text-align: center;
+    font-size: larger;
+    background: rgba(206, 255, 206, 0.5);
+    color: rgb(49, 82, 0);
+    justify-content: space-between;
+
+}
+
+p {
+    margin: 5px 5px 10px 5px;
+}
+
+.imgfield {
+
+    margin: 3px;
+    /* background: rgb(241, 167, 55); */
+    text-align: justify;
+}
+
+.imgbox {
+
+    border: 3 px solid white;
+
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    /* align-items: center; */
+
+}
+
+.logo-decor {
+    /* border: 3px solid white; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+
+
+
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+    text-align: center;
+    font-size: smaller;
+    /* margin: auto; */
+    /* width: 120px; */
+    background: rgba(32, 119, 29, 0.5);
+    color: white;
+    font-weight: bolder;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 5.5%;
+    background: rgba(32, 119, 29, 0.5);
+    color: white;
+    font-weight: bolder;
+}
+
+.about {
+
+    margin-top: 22.4px;
+    margin-bottom: 22.4px;
+}
