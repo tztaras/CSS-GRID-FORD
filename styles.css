@@ -46,7 +46,7 @@ hr {
 .gridareas {
     display: grid;
     /* grid-template: fitcontent / 90% 10%; */
-    grid-template-columns: 93% 7%;
+    grid-template-columns: 90% 10%;
     grid-template-rows: fitcontent;
     grid-template-areas: "header header"
         "content sidebar"
@@ -128,7 +128,7 @@ p {
 }
 
 .sidebar {
-    /* grid-area: sidebar; */
+    grid-area: sidebar;
     text-align: center;
     font-size: smaller;
     /* margin: auto; */
@@ -144,6 +144,7 @@ p {
 
 ul {
     /* list-style: none; */
+    /* padding: 0px; */
     text-align: left;
     font-size: larger;
     font-weight: 200;

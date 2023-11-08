@@ -35,7 +35,40 @@ function showinfo(event) {
 }
 
 
+function showSum(elem, x, y) {
+    document.querySelector(elem).textContent = x + y;
+}
+showSum('.box6', 2, 3);
 
+
+function showSum2(elem, x, y) {
+    elem.textContent = x + y;
+}
+
+// showSum2(document.querySelector('.box4'), 11, 44);
+
+let a1 = document.querySelector('.box4');
+showSum2(a1, 11, 22);
+
+//элементы по умолчанию ставим в конце
+function showSum3(x, y, lmt = '.box5') {
+    document.querySelector(lmt).textContent = arguments[1] + y;
+    console.log(arguments)
+}
+showSum3(3, 7);
+ 
+
+function showSumAll() {
+    console.log(arguments);
+    let sum = 0;
+    for (let i = 0; i < arguments.length; i++){
+        sum += arguments[i];
+    }
+    console.log(sum);
+    let aAll = document.querySelector('.box3');
+    aAll.innerHTML = sum;
+}
+showSumAll(1,3,6,7)
 
 
 
