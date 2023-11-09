@@ -53,23 +53,96 @@ showSum2(a1, 11, 22);
 //элементы по умолчанию ставим в конце
 function showSum3(x, y, lmt = '.box5') {
     document.querySelector(lmt).textContent = arguments[1] + y;
-    console.log(arguments)
+    console.log(arguments);
 }
 showSum3(3, 7);
  
 
+
+
+
+
+
 function showSumAll() {
     console.log(arguments);
-    let sum = 0;
-    for (let i = 0; i < arguments.length; i++){
-        sum += arguments[i];
-    }
-    console.log(sum);
+    // let wer = 0;
+    // for (let i = 0; i < arguments.length; i++){
+    //     wer += arguments[i];
+
+
+    //     // ================================================
+    //     //The symbol that accumulates the sum of all arguments is the += operator. In your showSumAll function, the line wer += arguments[i] uses the += operator to add the value of arguments[i] to the wer variable and store the result back in the wer variable. This line effectively accumulates the sum of all the arguments by repeatedly adding each argument to the running total stored in wer.
+    // }
+
+
+    let wer = Array.from(arguments).reduce((raz, dva) => raz += dva);
+
+
+    console.log(wer);
     let aAll = document.querySelector('.box3');
-    aAll.innerHTML = sum;
+    aAll.innerHTML = wer;
 }
-showSumAll(1,3,6,7)
+showSumAll(3, 4, 1, 2);
 
 
 
+// ` ...argus `— ВСЕ аргументы попадут в функцию.
+function showSumo(...argus) {
+    console.log(argus);
+    let wer = argus.reduce((raz, dva) => raz += dva);
+    console.log(wer);
+
+
+
+    // let aAll = document.querySelector('.box3');
+    // aAll.innerHTML = wer;
+    document.querySelector('.box3').innerHTML = wer;
+}
+showSumo(3, 4, 2, 2, 10);
+
+
+
+
+
+function getSome(res) {
+    document.querySelector('.header-box').innerHTML = `<b><i> ${res} </i></b>`;
+}
+function g2(num, mirrorNum) {
+    mirrorNum(num);
+}
+g2(33,getSome)
+
+
+// document.querySelector('.b-1').onclick = () => {
+    
+//     function t1(i,o) {
+//         // i = 1;
+//         // o = 14;
+//         document.querySelector('.box6').innerHTML = Math.floor(Math.random() * (o - i + 1) + i);
+//         // document.querySelector(p).innerHTML = i + o;
+//     }
+    
+//     // t1(2, 9, '.box6');
+    
+//     t1(1,5)
+   
+// }
+
+
+
+document.querySelector('.b-1').onclick = () => {
+
+    function t1(i,o,p='.box6') {
+        i = 0;
+        o = 100;
+        document.querySelector(p).innerHTML = Math.floor(Math.random() * (o - i + 1) + i);
+       
+    }
+    
+    // t1(2, 9, '.box6');
+    
+    t1()
+   
+}
+    
 
