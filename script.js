@@ -5,18 +5,20 @@ let nameout = document.querySelector('.name-info');
 
 let llcname = document.querySelector('.company-info');
 
-for (kluch in logo) {
+let otherinfo = document.querySelector('.other-info');
+
+for (wer in logo) {
     let img = document.createElement('img');          //создается изображение (element)
-    img.setAttribute('data-key', kluch);                // добавляется дата атрибут
+    img.setAttribute('data-key', wer);                // добавляется дата атрибут
     img.classList.add('logo-decor');
-    img.src = './pictures/' + kluch + '.png';           // прописываем путь (в сурсе указывается папка)
+    img.src = './pictures/' + wer + '.png';           // прописываем путь (в сурсе указывается папка)
     imageout.append(img);                             //вставляем внутрь блока
 }
-
+console.log(wer);
 
 imageout.addEventListener('click', showinfo);
 function showinfo(event) {
-    // console.log(event.target);
+    console.log(event.target);
     console.dir(event.target);
     let key = event.target.dataset['key'];
     console.log(key);
@@ -31,6 +33,7 @@ function showinfo(event) {
     event.target.classList.add('active');
     nameout.textContent = logo[key]['name'];
     llcname.textContent = logo[key]['company'];
+    otherinfo.innerHTML = logo[key]['links'];
 
 }
 
