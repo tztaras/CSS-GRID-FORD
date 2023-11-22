@@ -106,15 +106,15 @@ showSumo(3, 4, 2, 2, 10);
 
 
 
-
+// ==============================
 function getSome(res) {
     document.querySelector('.header-box').innerHTML = `<b><i> ${res} </i></b>`;
 }
 function g2(num, mirrorNum) {
     mirrorNum(num);
 }
-g2(33,getSome)
-
+g2(33,getSome);
+// =============================
 
 // document.querySelector('.b-1').onclick = () => {
     

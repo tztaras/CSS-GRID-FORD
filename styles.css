@@ -226,9 +226,9 @@ a {
             "sidebar"
             "content"
             "footer";
-        row-gap: 1%;
+        row-gap: 0.5%;
         column-gap: 0%;
-        margin: 20px 0px 20px 15px;
+        margin: 20px 0px 20px 0px;
         /* background: rgba(180, 224, 83, 0.5); */
 
 
@@ -247,6 +247,18 @@ a {
 
     .b-1 {
         margin-bottom: 10px;
+    }
+
+
+    .imgbox {
+
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    img {
+        width: auto;
+        height: 50px;
     }
 
     .sidebar {

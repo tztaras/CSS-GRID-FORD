@@ -45,7 +45,7 @@ let logo = {
         'name': 'LinkedIn',
         'filefullname':'l43527.png',
         'company': 'Microsoft Corporation',
-        'links':'<a href="https://www.linkedin.com/">linked.com</a>',
+        'links':'<a href="https://www.linkedin.com/">linkedin.com</a>',
     },
 
     'tsdle3': {
