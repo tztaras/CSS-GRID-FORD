@@ -68,5 +68,26 @@ let logo = {
         'company': 'Delaware Corporation',
         'links':'<a href="https://www.cloudflare.com/">cloudflare.com</a>',
     },
+
+    'b22133': {
+        'name': 'BURGER KING',
+        'filefullname':'b22133.png',
+        'company': 'Burger King Corporation',
+        'links':'<a href="https://www.bk.com/">bk.com</a>',
+    },
+    
+    't22207': {
+        'name': 'TikTok',
+        'filefullname':'t22207.png',
+        'company': 'Beijing Microbroadcast Vision Technology',
+        'links':'<a href="https://www.douyin.com/">douyin.com</a>',
+    },
+
+    'j22224': {
+        'name': 'Jawa',
+        'filefullname':'j22224.png',
+        'company': 'Oracle Corporation',
+        'links':'<a href="https://www.java.com/en/">jawa.com</a>',
+    },
 }
 

@@ -110,7 +110,7 @@ hr {
     grid-area: content;
     text-align: center;
     font-size: larger;
-    background: rgba(219, 255, 219, 0.5);
+    background: rgba(225, 255, 225, 0.5);
     color: rgb(49, 82, 0);
     justify-content: space-between;
 
@@ -250,11 +250,7 @@ a {
     }
 
 
-    .imgbox {
 
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
 
     img {
         width: auto;
@@ -264,6 +260,7 @@ a {
     .sidebar {
 
         max-height: fit-content;
+        background: linear-gradient(10deg, rgba(32, 119, 29, 0.5) 30%, rgb(20, 233, 126) 100%);
 
 
     }
@@ -293,5 +290,20 @@ a {
 
 
 
+
+}
+
+@media(max-width:1100px) {
+    .imgbox {
+
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    }
+
+    img {
+        margin-bottom: 5px;
+    }
 
 }
