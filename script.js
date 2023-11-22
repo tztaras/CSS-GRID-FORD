@@ -113,7 +113,7 @@ function getSome(res) {
 function g2(num, mirrorNum) {
     mirrorNum(num);
 }
-g2(33,getSome);
+g2(999,getSome);
 // =============================
 
 // document.querySelector('.b-1').onclick = () => {
@@ -149,3 +149,24 @@ document.querySelector('.b-1').onclick = () => {
 }
     
 
+
+document.addEventListener('keydown', event => {
+    console.log(event.key);
+
+    console.dir(event.target);
+
+   
+
+
+    let item = document.querySelector(`[data-scroll="s-${event.key}"]`);
+
+    if (item) scrollTo(item);
+    if (event.target.tagName != 'body') return;
+    
+});
+
+
+//item попадает в elem
+function scrollTo(elem) {
+    elem.scrollIntoView({ block: 'center', behavior: 'smooth' });
+}

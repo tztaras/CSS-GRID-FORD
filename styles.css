@@ -1,5 +1,6 @@
 body {
-    background: rgb(241, 241, 241);
+    background: rgb(248, 248, 248);
+    font-family: sans-serif;
 
 }
 
@@ -67,13 +68,13 @@ hr {
     display: grid;
     /* grid-template: fitcontent / 90% 10%; */
     grid-template-columns: 90% 10%;
-    grid-template-rows: fitcontent;
+    /* grid-template-rows: fitcontent; */
     grid-template-areas: "header header"
         "content sidebar"
         "footer footer";
-    row-gap: 3%;
+    row-gap: 1%;
     column-gap: 0%;
-    margin: 20px 30px 20px 30px;
+    margin: 20px 40px 20px 40px;
     /* background: rgba(180, 224, 83, 0.5); */
 
 
@@ -117,12 +118,15 @@ hr {
 }
 
 p {
-    margin: 5px 5px 10px 5px;
+    margin: 5px 25px 10px 25px;
+    text-align: left;
 }
 
 .imgfield {
 
-    margin: 3px;
+    margin: 0 auto;
+    max-width: 1000px;
+
     /* background: rgb(241, 167, 55); */
     text-align: justify;
 }
