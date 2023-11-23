@@ -149,7 +149,7 @@ document.querySelector('.b-1').onclick = () => {
 }
     
 
-
+// навигация
 document.addEventListener('keydown', event => {
     console.log(event.key);
 
@@ -164,8 +164,6 @@ document.addEventListener('keydown', event => {
     
     
 });
-
-
 //item попадает в elem
 function scrollTo(elem) {
     elem.scrollIntoView({ block: 'center', behavior: 'smooth' });

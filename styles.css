@@ -190,7 +190,7 @@ ul {
 }
 
 li {
-    list-style: square;
+    list-style: url('./pictures/free-icon-cat-3102225.png');
     text-align: left;
     padding-left: 0px;
     padding: 5px 0px 5px 0px;
@@ -219,6 +219,12 @@ a {
     color: white;
 }
 
+@media (max-width:1400px) {
+    ul {
+        padding-left: 30px;
+        padding-right: 8px;
+    }
+}
 
 @media (max-width:900px) {
     .gridareas {
@@ -271,24 +277,28 @@ a {
 
     ul {
         font-size: larger;
-        list-style-type: none;
-        margin: 0;
-        margin-left: 15px;
+
+        /* margin: 0;
+        margin-left: 40px;
         margin-top: 15px;
-        padding: 0;
+        padding: 0; */
+
         display: flex;
         justify-content: center;
+
 
     }
 
     li {
         /* position: relative; */
-        margin-left: 22px;
-        margin-right: 10px;
+        margin-left: 50px;
+        margin-right: 40px;
+        padding-bottom: 20px;
         padding-top: 0px;
+
         /* padding-left: 1px; */
         list-style-position: outside;
-        list-style: none;
+        /* list-style: none; */
     }
 
 
