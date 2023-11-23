@@ -155,13 +155,13 @@ document.addEventListener('keydown', event => {
 
     console.dir(event.target);
 
-   
+    if (event.target.tagName !== 'BODY') return;
 
 
     let item = document.querySelector(`[data-scroll="s-${event.key}"]`);
 
     if (item) scrollTo(item);
-    if (event.target.tagName != 'body') return;
+    
     
 });
 
