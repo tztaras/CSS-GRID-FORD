@@ -29,10 +29,30 @@ h2 {
 }
 
 .box1 {
-    background: rgba(180, 224, 83, 0.5);
+    display: flex;
+    background: rgba(32, 119, 29, 0.5);
     /* grid-row-start: span 1;
     grid-column: span 2; */
-    width: 20%;
+    width: 30%;
+    min-width: fit-content;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+
+}
+
+input {
+    background: rgba(230, 245, 195, 0.856);
+    color: rgb(8, 133, 241);
+    border: 5px dotted yellowgreen;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: larger;
+}
+
+input:hover {
+    border: 10px dotted yellowgreen;
 }
 
 .box3 {
