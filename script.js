@@ -169,11 +169,12 @@ function scrollTo(elem) {
     elem.scrollIntoView({ block: 'center', behavior: 'smooth' });
 }
 
+// выбор всех коробок с классом и добавление нового класса через кнопку
 document.querySelector('.nsfw').onclick = bgchange;
 function bgchange() {
     let a = document.querySelectorAll('.griditem');
     a.forEach( (bg) => {
-        bg.classList.toggle('bg-grey');
+        bg.classList.toggle('bg-nsfw');
     });
         
 }

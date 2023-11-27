@@ -80,8 +80,10 @@ input:hover {
 
 }
 
-.bg-grey {
-    background-color: grey;
+.bg-nsfw {
+    background-color: rgba(179, 174, 174, 0.274);
+    opacity: 0.06;
+    border: 5px solid rgba(179, 174, 174, 0.274);
 }
 
 hr {
