@@ -16,7 +16,9 @@ body {
     /* justify-items: center; */
     /* выравниваеи по вертикали */
     /* align-items: center; */
+    /* background: grey; */
 }
+
 
 h2 {
     text-align: center;
@@ -76,6 +78,10 @@ input:hover {
     color: rgb(255, 0, 0);
     font-size: larger;
 
+}
+
+.bg-grey {
+    background-color: grey;
 }
 
 hr {
