@@ -80,6 +80,11 @@ input:hover {
 
 }
 
+.b-1 {
+    background-color: rgba(32, 119, 29, 0.5);
+
+}
+
 .bg-nsfw {
     background-color: rgba(179, 174, 174, 0.274);
     opacity: 0.06;
@@ -127,11 +132,26 @@ hr {
 }
 
 .b-1 {
-    background: springgreen;
+    background: rgb(31, 223, 127);
     width: 90px;
 }
 
 .b-1:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.nsfw {
+    max-height: fit-content;
+    width: 90px;
+    font-weight: 900;
+    font-size: 18px;
+    color: aliceblue;
+    border-radius: 10px;
+    background: linear-gradient(160deg, rgb(255, 59, 59) 50%, rgb(109, 23, 23) 75%);
+}
+
+.nsfw:hover {
     opacity: 0.9;
     cursor: pointer;
 }
