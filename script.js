@@ -177,6 +177,9 @@ function bgchange() {
         bg.classList.toggle('bg-nsfw');
     });
 
+    let cf = document.getElementById('catface');
+    cf.classList.toggle('ctlogo');
+
     let lili = document.querySelectorAll('li');
    
     lili.forEach((catrmv) => {
