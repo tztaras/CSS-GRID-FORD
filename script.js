@@ -176,5 +176,14 @@ function bgchange() {
     a.forEach( (bg) => {
         bg.classList.toggle('bg-nsfw');
     });
+
+    let lili = document.querySelectorAll('li');
+   
+    lili.forEach((catrmv) => {
+        catrmv.classList.toggle('nocatli');
+    })
+   
+    
         
+  
 }
