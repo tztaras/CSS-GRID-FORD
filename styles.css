@@ -255,6 +255,7 @@ li {
 
 .nocatli {
     list-style: disc;
+    padding-top: 13px;
 }
 
 
