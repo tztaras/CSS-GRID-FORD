@@ -154,6 +154,9 @@ hr {
 .nsfw:hover {
     opacity: 0.9;
     cursor: pointer;
+    box-shadow: 0 0 3px rgb(255, 59, 59);
+    /* border: 1px solid black; */
+    background: linear-gradient(165deg, rgb(255, 59, 59) 50%, rgb(109, 23, 23) 90%);
 }
 
 .content {
@@ -172,19 +175,13 @@ p {
 }
 
 .imgfield {
-
     margin: 0 auto;
     max-width: 1000px;
-
     /* background: rgb(241, 167, 55); */
     text-align: justify;
 }
 
 .imgbox {
-
-    border: 3 px solid white;
-
-
     display: flex;
     justify-content: space-around;
     margin: 15px 0px 15px 0px;
@@ -272,6 +269,13 @@ a {
     ul {
         padding-left: 30px;
         padding-right: 8px;
+    }
+
+    .nsfw {
+        max-height: fit-content;
+        max-width: fit-content;
+        width: 90px;
+        font-weight: 900;
     }
 }
 
