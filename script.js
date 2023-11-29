@@ -191,7 +191,9 @@ function bgchange() {
   
 }
 
-
+// NIGHTMODE
+// NIGHTMODE
+// NIGHTMODE
 document.querySelector('.sw').onclick = night;
 function night() {
     // let b = document.querySelector('body');
