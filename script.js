@@ -194,7 +194,12 @@ function bgchange() {
 
 document.querySelector('.sw').onclick = night;
 function night() {
-    let a = document.querySelectorAll('body');
+    let b = document.querySelector('body');
+    b.style.background = 'black';
+    if (b.style.background === 'black') {
+        b.style.background = 'rgb(248, 248, 248)';
+    }
+    let a = document.querySelectorAll('.container, .gridareas');
     a.forEach((nn) => {
         nn.classList.toggle('bg-night');
     })
