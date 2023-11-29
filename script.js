@@ -194,13 +194,13 @@ function bgchange() {
 
 document.querySelector('.sw').onclick = night;
 function night() {
-    let b = document.querySelector('body');
-    b.style.background = 'black';
-    if (b.style.background === 'black') {
-        b.style.background = 'rgb(248, 248, 248)';
-    }
-    let a = document.querySelectorAll('.container, .gridareas');
+    // let b = document.querySelector('body');
+    // b.style.background = 'black';
+    // if (b.style.background === 'black') {
+    //     b.style.background = 'rgb(248, 248, 248)';
+    // };
+    let a = document.querySelectorAll('.griditem, .container, body');
     a.forEach((nn) => {
         nn.classList.toggle('bg-night');
-    })
+    });
 }

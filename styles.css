@@ -101,8 +101,18 @@ input:hover {
 }
 
 .bg-night {
-    background: rgb(85, 80, 80);
+    background: rgb(85, 85, 85);
+    transition: 2s;
+    /* color: aliceblue; */
 }
+
+.bg-night h2,
+.bg-night p,
+.bg-night h3 {
+    color: rgb(255, 255, 255);
+}
+
+
 
 hr {
     color: rgb(39, 240, 21);
@@ -207,6 +217,10 @@ p {
     box-shadow: 0 0 9px rgba(0, 0, 0, 1);
 }
 
+.bg-night .logo-decor {
+    box-shadow: 0 0 12px rgb(255, 255, 255);
+}
+
 .logo-decor:hover {
     opacity: 0.8;
     cursor: help;
@@ -218,6 +232,10 @@ p {
 
 .active {
     box-shadow: 0 0 30px rgba(32, 119, 29, 1);
+}
+
+.bg-night .active {
+    box-shadow: 1px 1px 30px rgb(19, 19, 19);
 }
 
 .sidebar {
