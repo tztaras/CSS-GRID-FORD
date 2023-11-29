@@ -190,3 +190,12 @@ function bgchange() {
         
   
 }
+
+
+document.querySelector('.sw').onclick = night;
+function night() {
+    let a = document.querySelectorAll('body');
+    a.forEach((nn) => {
+        nn.classList.toggle('bg-night');
+    })
+}

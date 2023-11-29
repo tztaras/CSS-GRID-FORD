@@ -100,6 +100,10 @@ input:hover {
     border: 5px solid rgba(179, 174, 174, 0.274);
 }
 
+.bg-night {
+    background: rgb(53, 50, 50);
+}
+
 hr {
     color: rgb(39, 240, 21);
     height: 6px;
