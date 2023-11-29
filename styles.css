@@ -287,9 +287,10 @@ a {
 
     .nsfw {
         max-height: fit-content;
-        max-width: fit-content;
-        width: 90px;
+        /* max-width: fit-content; */
+        width: 60px;
         font-weight: 900;
+        font-size: small;
     }
 }
 
@@ -312,7 +313,8 @@ a {
     }
 
     .header {
-        max-height: 80px;
+        max-height: fit-content;
+        font-size: smaller;
 
     }
 
@@ -352,6 +354,8 @@ a {
 
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+
 
 
     }
@@ -360,7 +364,7 @@ a {
         /* position: relative; */
         margin-left: 50px;
         margin-right: 40px;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
         padding-top: 0px;
 
         /* padding-left: 1px; */
@@ -368,7 +372,9 @@ a {
         /* list-style: none; */
     }
 
-
+    .nocatli {
+        padding: 8px 0 0px 0;
+    }
 
 
 
@@ -387,4 +393,51 @@ a {
         margin-bottom: 5px;
     }
 
+}
+
+/* SWITCHER */
+/* SWITCHER */
+/* SWITCHER */
+
+
+.switcher {
+    margin: 15px 0 0 0;
+}
+
+input[class="sw"] {
+    border: none;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    appearance: none;
+    outline: none;
+    background: yellow;
+    border-radius: 20px;
+    transition: 1s;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, .9);
+
+}
+
+input:checked[class="sw"] {
+    background: rgb(171, 255, 4);
+}
+
+input[class="sw"]:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: rgb(11, 139, 11);
+    transition: 1s;
+    transform: scale(1.1);
+    box-shadow: inset 0px 0px 4px rgb(1, 59, 6);
+    border: 0.1px solid rgba(112, 175, 11, 0.911);
+
+}
+
+input:checked[class="sw"]:before {
+    left: 30px;
 }
