@@ -206,3 +206,28 @@ function night() {
         nn.classList.toggle('bg-night');
     });
 }
+
+
+
+// Меняем иконку и текст на неактивной вкладке
+// Меняем иконку и текст на неактивной вкладке
+// Меняем иконку и текст на неактивной вкладке
+
+let timer;
+let t = 'CSS GRID R. FORD';
+
+function changeTitle(text) {
+    document.querySelector('head title').innerHTML = text;
+    
+}
+
+window.onblur = () => {
+    timer = setTimeout(() => {
+        changeTitle('🚨 YOU SHOULD CODE!');
+    },5000);
+    
+}
+window.onfocus = () => {
+    clearTimeout(timer);
+    changeTitle(t);
+}
