@@ -216,18 +216,19 @@ function night() {
 let timer;
 let t = 'CSS GRID R. FORD';
 
-function changeTitle(text) {
+function changeTitle(icon,text) {
     document.querySelector('head title').innerHTML = text;
+    document.querySelector('link[rel="icon"]').setAttribute('href', icon);
     
 }
 
 window.onblur = () => {
     timer = setTimeout(() => {
-        changeTitle('🚨 YOU SHOULD CODE!');
+        changeTitle('/sirenfavicon.png','YOU SHOULD CODE!');
     },5000);
     
 }
 window.onfocus = () => {
     clearTimeout(timer);
-    changeTitle(t);
+    changeTitle('/favicon.png',t);
 }
