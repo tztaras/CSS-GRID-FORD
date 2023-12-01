@@ -224,11 +224,11 @@ function changeTitle(icon,text) {
 
 window.onblur = () => {
     timer = setTimeout(() => {
-        changeTitle('/sirenfavicon.png','YOU SHOULD CODE!');
-    },5000);
+        changeTitle('/sirenfavicon.ico','YOU SHOULD CODE!');
+    },8000);
     
 }
 window.onfocus = () => {
     clearTimeout(timer);
-    changeTitle('/favicon.png',t);
+    changeTitle('/favicon.ico',t);
 }
