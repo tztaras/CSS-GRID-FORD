@@ -213,6 +213,7 @@ function night() {
     let nightModeActivated = document.body.classList.contains('bg-night');
 
     localStorage.setItem('nightMode', nightModeActivated);
+    sw.checked = nightModeActivated;
     
 }
 
@@ -222,7 +223,7 @@ function night() {
 if (storedNightModeActivated === 'true') {
     
     night();
-    sw.input = 'checked';
+    sw.checked = true;
     
     
     }
