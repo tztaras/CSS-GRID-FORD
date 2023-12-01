@@ -205,7 +205,17 @@ function night() {
     a.forEach((nn) => {
         nn.classList.toggle('bg-night');
     });
+
+    let nightModeActivated = document.body.classList.contains('bg-night');
+
+    localStorage.setItem('nightMode', nightModeActivated);
 }
+    let storedNightModeActivated = localStorage.getItem('nightMode');
+
+    if (storedNightModeActivated === 'true') {
+        night();
+    }
+
 
 
 
