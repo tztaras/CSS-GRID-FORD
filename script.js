@@ -194,13 +194,17 @@ function bgchange() {
 // NIGHTMODE
 // NIGHTMODE
 // NIGHTMODE
-document.querySelector('.sw').onclick = night;
-function night() {
     // let b = document.querySelector('body');
     // b.style.background = 'black';
     // if (b.style.background === 'black') {
     //     b.style.background = 'rgb(248, 248, 248)';
     // };
+let sw =document.querySelector('.sw');
+
+let storedNightModeActivated = localStorage.getItem('nightMode');
+
+sw.onclick = night;
+function night() {
     let a = document.querySelectorAll('.griditem, .container, body');
     a.forEach((nn) => {
         nn.classList.toggle('bg-night');
@@ -209,11 +213,18 @@ function night() {
     let nightModeActivated = document.body.classList.contains('bg-night');
 
     localStorage.setItem('nightMode', nightModeActivated);
+    
 }
-    let storedNightModeActivated = localStorage.getItem('nightMode');
 
-    if (storedNightModeActivated === 'true') {
-        night();
+    
+    
+
+if (storedNightModeActivated === 'true') {
+    
+    night();
+    sw.input = 'checked';
+    
+    
     }
 
 
