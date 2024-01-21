@@ -204,6 +204,14 @@ p {
     text-align: justify;
 }
 
+.position-column {
+    width: 20%;
+}
+
+tr[scope='row'] {
+    height: 80px;
+}
+
 .imgbox {
     display: flex;
     justify-content: space-around;
