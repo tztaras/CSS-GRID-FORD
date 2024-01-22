@@ -1,3 +1,9 @@
+
+// alert( !true );
+// alert( !0 );
+
+
+
 // alert('GREETINGS PUGIVERSE!');
 let imageout = document.querySelector('.imgbox');
 
