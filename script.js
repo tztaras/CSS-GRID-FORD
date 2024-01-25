@@ -1,10 +1,11 @@
 
-// alert( !true );
-// alert( !0 );
+(function (name) {
+    console.log("Hello", name);
+})('Student');
 
 
 
-// alert('GREETINGS PUGIVERSE!');
+
 let imageout = document.querySelector('.imgbox');
 
 let nameout = document.querySelector('.name-info');
