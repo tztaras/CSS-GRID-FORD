@@ -5,6 +5,33 @@
 
 
 
+var f = function printLog() {
+console.log('My function');
+}
+f();
+
+function sum(a, b){
+  return a + b;
+}
+let result = sum(2, 5);
+console.log(result);
+
+var a = 1;
+function foo() {
+    var b = 2;
+    function innertFoo() {
+        var a = 2;        
+        if (true) {
+            let a = 3;
+        }
+        return a + b;
+      
+    }
+    return innertFoo() + a;
+}
+console.log(foo());
+
+
 
 let imageout = document.querySelector('.imgbox');
 
