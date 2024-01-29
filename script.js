@@ -2,8 +2,17 @@
 (function (name) {
     console.log("Hello", name);
 })('Student');
+// var pra = document.querySelector('.box3');
 
+let i = 0;
+let o = 10;
+for (; i <= 10, o >= 0; i++, o--){
+    console.log(` i = ${i}, o = ${o}`);
+    document.querySelector('.box3').innerHTML += ` ${i} --- ${o} |`;
+    // document.querySelector('.box3').innerHTML += `${i}`;
+}
 
+    
 
 var f = function printLog() {
 console.log('My function');
@@ -30,6 +39,10 @@ function foo() {
     return innertFoo() + a;
 }
 console.log(foo());
+
+
+
+
 
 
 
@@ -119,7 +132,7 @@ function showSumAll() {
     let aAll = document.querySelector('.box3');
     aAll.innerHTML = wer;
 }
-showSumAll(3, 4, 1, 2);
+// showSumAll(3, 4, 1, 2);
 
 
 
@@ -135,7 +148,7 @@ function showSumo(...argus) {
     // aAll.innerHTML = wer;
     document.querySelector('.box3').innerHTML = wer;
 }
-showSumo(3, 4, 2, 2, 10);
+// showSumo(3, 4, 2, 2, 10);
 
 
 
