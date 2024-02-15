@@ -204,6 +204,81 @@ p {
     text-align: justify;
 }
 
+.loader {
+    /* background-color: brown; */
+    width: 100px;
+    height: 40px;
+    position: relative;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px -50px;
+    */
+}
+
+.loader>div {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(80, 159, 228);
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+.d1 {
+    animation: load 2s linear infinite;
+}
+
+.d2 {
+    animation: load 2s linear infinite -.4s;
+}
+
+.d3 {
+    animation: load 2s linear infinite -.8s;
+}
+
+.d4 {
+    animation: load 2s linear infinite -1.2s;
+}
+
+.d5 {
+    animation: load 2s linear infinite -1.6s;
+}
+
+@keyframes load {
+    0% {
+        left: 100px;
+        top: 0;
+
+    }
+
+    80% {
+        left: 0;
+        top: 0;
+    }
+
+    85% {
+        left: 0;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    90% {
+        width: 40px;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    100% {
+        left: 100px;
+        top: 0;
+    }
+
+}
+
+
 .position-column {
     width: 20%;
 }
@@ -218,7 +293,10 @@ tr[scope='row'] {
     margin: 15px 0px 15px 0px;
     /* align-items: center; */
 
+
 }
+
+
 
 .logo-decor {
     /* border: 3px solid white; */
