@@ -3,7 +3,7 @@
     setTimeout(() => {
         document.querySelector('.loader').style.display = 'none';
         document.querySelector('.mainpage').style.display = 'block';
-    }, 2000);
+    }, 3000);
 })();
 
 
