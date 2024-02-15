@@ -219,7 +219,8 @@ p {
 .loader>div {
     width: 20px;
     height: 20px;
-    background-color: rgb(80, 159, 228);
+    box-shadow: 0 0 5px 0px black;
+    background: linear-gradient(135deg, rgb(225, 0, 255)20%, rgb(15, 76, 155)80%);
     border-radius: 50%;
     position: absolute;
 
