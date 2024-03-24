@@ -1,10 +1,10 @@
 
-// (function () {
-//     setTimeout(() => {
-//         document.querySelector('.loader').style.display = 'none';
-//         document.querySelector('.mainpage').style.display = 'block';
-//     }, 3000);
-// })();
+(function () {
+    setTimeout(() => {
+        document.querySelector('.loader').style.display = 'none';
+        document.querySelector('.mainpage').style.display = 'block';
+    }, 3000);
+})();
 
 
 (function (name) {
