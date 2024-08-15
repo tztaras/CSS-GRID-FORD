@@ -89,7 +89,6 @@ function showinfo(event) {
     nameout.textContent = logo[key]['name'];
     llcname.textContent = logo[key]['company'];
     otherinfo.innerHTML = logo[key]['links'];
-
 }
 
 
